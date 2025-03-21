@@ -1,4 +1,15 @@
 {
   "name": "portrait-whatsapp-web",
-  "packageManager": "yarn@4.7.0"
+  "version": "1.0.0",
+  "packageManager": "yarn@4.7.0",
+  "scripts": {
+    "start": "parcel watch manifest.json --host localhost --config @parcel/config-webextension",
+    "build": "parcel build manifest.json --config @parcel/config-webextension"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.14.1",
+    "@parcel/core": "^2.14.1",
+    "@types/chrome": "^0.0.310",
+    "parcel": "^2.14.1"
+  }
 }

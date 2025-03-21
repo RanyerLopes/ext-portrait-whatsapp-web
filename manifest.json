@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Portrait Whatsapp Web",
+  "version": "1.0.0",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [{
+    "matches": ["*://web.whatsapp.com/*"],
+    "js": ["src/content-script.js"]
+  }]
+}
